@@ -92,3 +92,38 @@ Directory	Purpose
 /root	Root user's home
 /usr	Applications and shared resources
 /dev	Device files
+
+Part 2: Linux practical exercise
+Open your Ubuntu terminal (or WSL if you use Windows).
+
+Execute these commands one by one.
+whoami
+
+
+Shows which user you are logged in as.
+pwd
+
+
+Shows your current directory.
+ls -la
+
+
+Lists files, including hidden files.
+cd /etc
+
+
+Moves into the /etc directory.
+pwd
+
+
+Confirms your current location.
+cd /var/log
+ls -lah
+
+
+Displays log files.
+cd /home
+ls -la
+
+
+Displays home directories.
