@@ -1,3 +1,94 @@
 Fundamental Of Linux.
 What is Linux?
 ->Linux is a free, open-source operating system (OS) that manages the communication between a computer's hardware and its software applications.
+Examples of Linux distributions:
+- Ubuntu
+- Red Hat Enterprise Linux (RHEL)
+- Amazon Linux
+- Debian
+2. Understand the Linux directory structure
+In Windows, you might see:
+
+C:\Users\John\Documents
+
+In Linux, the entire file system starts from /, called the root directory.
+Let's understand the important directories.
+A. /etc – Configuration files
+Imagine your house has a control room where you manage electricity, water and security settings.
+
+/etc is similar. It stores system configuration files.
+
+Examples:
+- /etc/ssh/ – SSH configuration.
+- /etc/hosts – Local hostname-to-IP mappings.
+- /etc/passwd – User account information.
+- /etc/fstab – Filesystem mount configuration.
+Command:
+ls -la /etc
+
+
+Interview question:
+
+Q: What is the purpose of /etc in Linux?
+
+Answer: /etc contains system-wide configuration files used to configure services and operating-system behaviour.
+B. /var – Variable data
+Imagine a company's daily register.
+
+Every day, new entries are added. The information keeps changing.
+
+That's the idea behind /var.
+
+It commonly contains:
+- Logs
+- Cache
+- Application data
+- Spool files
+Important location:
+/var/log
+
+
+Command:
+ls -lah /var/log
+
+
+Interview question:
+
+Q: Where do you check Linux system logs?
+
+Answer: I generally check /var/log and use journalctl for systemd journal logs.
+C. /home – User directories
+Imagine an office where every employee has their own desk.
+
+Similarly, Linux gives users their own directories.
+
+Example:
+/home/rahul
+/home/admin
+/home/user1
+
+
+Command:
+ls -la /home
+
+
+D. /tmp – Temporary files
+Imagine writing something on a whiteboard.
+
+You use it temporarily and erase it later.
+
+/tmp stores temporary files. They may be removed automatically during cleanup or reboot, depending on system configuration.
+
+Command:
+ls -lah /tmp
+
+
+Quick revision
+Directory	Purpose
+/etc	Configuration
+/var	Logs and changing data
+/home	User files
+/tmp	Temporary files
+/root	Root user's home
+/usr	Applications and shared resources
+/dev	Device files
